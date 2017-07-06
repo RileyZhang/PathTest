@@ -10,10 +10,18 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
     <Button 
-        android:id="@+id/button"
+        android:id="@+id/common_notify"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_below="@+id/test"
+        android:text="@string/common_notify"
+        />
+    <Button 
+        android:id="@+id/custom_notify"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/custom_notify"
+        android:layout_below="@+id/common_notify"
         />
 
 </RelativeLayout>
