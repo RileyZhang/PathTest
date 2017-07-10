@@ -26,6 +26,19 @@
         <service 
             android:name="com.example.pathtest.NotifyService"
             ></service>
+        
+        <receiver 
+            android:name="appwidget.pathTestWidget"
+            android:label="@string/app_name"
+            >
+            <intent-filter >
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data 
+                android:name="android.appwidget.provider"
+                android:resource="@xml/path_test_appwidget"
+                />
+        </receiver>
     </application>
 
 </manifest>

@@ -15,6 +15,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.RemoteViews;
 import android.widget.TextView;
+import util.GlobalConstant;
 
 public class MainActivity extends Activity implements OnClickListener{
 

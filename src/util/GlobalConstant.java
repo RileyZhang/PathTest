@@ -1,7 +1,8 @@
-package com.example.pathtest;
+package util;
 
 public class GlobalConstant {
 
+	public static String TAG = "path_test";
 	public static String OPERATE_TYPE = "operate_type";
 	public static final int NOTIFICATION_ID_1 = 100;
 }
