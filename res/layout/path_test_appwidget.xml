@@ -8,5 +8,20 @@
         android:layout_height="match_parent"
         android:src="@drawable/widget_bg"
         />
+    <TextView 
+        android:id="@+id/tv_widget_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_view_height"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="@string/widget_text"
+        />
+    <Button 
+        android:id="@+id/button_widget"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_view_height"
+        android:layout_below="@+id/tv_widget_name"
+        android:text="@string/button"
+        />
 
 </RelativeLayout>

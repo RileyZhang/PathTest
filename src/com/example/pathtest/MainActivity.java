@@ -22,6 +22,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	private TextView mTest;
 	private Button mCommonButton;
 	private Button mCustomButton;
+	private Button mNextButton;
 	private Context mContext;
 	private NotificationManager myManager;
 	private Notification myNotification;
@@ -30,6 +31,7 @@ public class MainActivity extends Activity implements OnClickListener{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
+		Log.i(GlobalConstant.TAG, "main onCreate()");
 		mContext = this;
 		setContentView(R.layout.activity_main);
 		mTest = (TextView) findViewById(R.id.test);
@@ -46,8 +48,29 @@ public class MainActivity extends Activity implements OnClickListener{
 		mCommonButton.setOnClickListener(this);
 		mCustomButton = (Button) findViewById(R.id.custom_notify);
 		mCustomButton.setOnClickListener(this);
+		mNextButton = (Button) findViewById(R.id.enter_next_activity);
+		mNextButton.setOnClickListener(this);
+	}
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		Log.i(GlobalConstant.TAG, "main onResume()");
+		super.onResume();
 	}
 	
+	@Override
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		Log.i(GlobalConstant.TAG, "main onStop()");
+		super.onStop();
+	}
+	
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		Log.i(GlobalConstant.TAG, "main onDestroy()");
+		super.onDestroy();
+	}
 	public void shwoCustomNotify(){
 		RemoteViews view_custom = new RemoteViews(getPackageName(), R.layout.notify_view);
 		view_custom.setTextViewText(R.id.notify_title, "今日头条");
@@ -145,6 +168,10 @@ public class MainActivity extends Activity implements OnClickListener{
 			break;
 		case R.id.custom_notify:
 			shwoCustomNotify();
+			break;
+		case R.id.enter_next_activity:
+			Intent intent = new Intent(mContext, SecondActivity.class);
+			startActivity(intent);
 			break;
 		default:
 			break;

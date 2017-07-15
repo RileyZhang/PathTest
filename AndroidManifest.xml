@@ -20,11 +20,24 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.example.pathtest.SecondActivity"
+            >
+            <intent-filter >
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
         <!-- notify service -->
         <service 
             android:name="com.example.pathtest.NotifyService"
+            ></service>
+        
+        <service 
+            android:name="com.example.pathtest.PathTestService"
             ></service>
         
         <receiver 

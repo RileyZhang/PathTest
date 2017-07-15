@@ -23,5 +23,12 @@
         android:text="@string/custom_notify"
         android:layout_below="@+id/common_notify"
         />
+    <Button 
+        android:id="@+id/enter_next_activity"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/enter_next_activity"
+        android:layout_below="@+id/custom_notify"
+        />
 
 </RelativeLayout>
