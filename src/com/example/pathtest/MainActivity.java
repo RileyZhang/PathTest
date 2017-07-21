@@ -50,6 +50,8 @@ public class MainActivity extends Activity implements OnClickListener{
 		mCustomButton.setOnClickListener(this);
 		mNextButton = (Button) findViewById(R.id.enter_next_activity);
 		mNextButton.setOnClickListener(this);
+		
+		GlobalConstant.setApplicationContext(getApplicationContext());
 	}
 	@Override
 	protected void onResume() {
@@ -71,6 +73,7 @@ public class MainActivity extends Activity implements OnClickListener{
 		Log.i(GlobalConstant.TAG, "main onDestroy()");
 		super.onDestroy();
 	}
+	
 	public void shwoCustomNotify(){
 		RemoteViews view_custom = new RemoteViews(getPackageName(), R.layout.notify_view);
 		view_custom.setTextViewText(R.id.notify_title, "今日头条");

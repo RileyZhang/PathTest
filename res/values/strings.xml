@@ -10,4 +10,5 @@
 	<string name="widget_text2">小部件text2</string>
 	<string name="button">按钮</string>
 	<string name="enter_next_activity">进入下一个activity</string>
+	<string name="dont_show_any_more">不再显示</string>
 </resources>

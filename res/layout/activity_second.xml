@@ -15,12 +15,25 @@
 	    android:text="@string/widget_text"
 	    android:layout_below="@+id/second_text"
 	    />
-	   <Button
-	       android:id="@+id/second_button"
-	       android:layout_width="match_parent"
-	       android:layout_height="@dimen/text_view_height"
-	       android:text="@string/widget_text2"
-	       android:layout_below="@+id/first_button"
-	       />
-	    
+   <Button
+       android:id="@+id/second_button"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/text_view_height"
+       android:text="@string/widget_text2"
+       android:layout_below="@+id/first_button"
+       />
+   <Button 
+       android:id="@+id/third_button"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/text_view_height"
+       android:text="@string/widget_text2"
+       android:layout_below="@+id/second_button"
+       />
+	<Button 
+       android:id="@+id/fourth_button"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/text_view_height"
+       android:text="@string/widget_text2"
+       android:layout_below="@+id/third_button"
+       />
 </RelativeLayout>
